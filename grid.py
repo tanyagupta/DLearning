@@ -1,4 +1,6 @@
 from __future__ import annotations
+from data_structures.referential_array import ArrayR
+from data_structures.array_sorted_list import ArraySortedList
 class Grid:
     DRAW_STYLE_SET = "SET"
     DRAW_STYLE_ADD = "ADD"
@@ -26,9 +28,22 @@ class Grid:
         """
 
 
+        self.rows = ArraySortedList (x)
 
 
-        raise NotImplementedError()
+        self.rows[0] = "chachu 0"
+        self.rows[1] = "chachu 1"
+
+
+
+
+    # chachu code
+    def __getitem__ (self, key):
+        return self.rows[key]
+
+
+
+        #raise NotImplementedError()
 
     def increase_brush_size(self):
         """

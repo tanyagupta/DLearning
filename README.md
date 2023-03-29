@@ -1,72 +1,122 @@
-# Fundamentals of Algorithms - Assignment 1 S1 2023
+# D's learning
 
-## Attribution
 
-* Assignment Designed and Programmed by Jackson Goerner.
-* Multiple points of valuable feedback and checking provided by Lifi Huang.
-* Game Idea originated from [Chicory: A Colorful Tale](https://chicorygame.com/).
 
-## Group Members
 
-- Jackson Goerner (jackson.goerner@monash.edu)
-- Saksham Nagpal (saksham.nagpal@monash.edu)
-- Alexey Ignatiev (alexey.ignatiev@monash.edu)
-- Brendon Taylor (brendon.taylor@monash.edu)
-
-## Setup
-
-Note: For all of these you may need to replace `python` with `py` or `python3` depending on your operating system and python version.
-
-```bash
-python -m pip install virtualenv
-python -m venv venv
 ```
-
-Next, activate your virtual environment (Must be done every time you open the terminal)
-
-Windows Bash
-```
-source venv/Scripts/activate
-```
-
-Windows CMD
-```
-venv/Scripts/activate
-```
-
-Windows Powershell
-```
-venv/Scripts/activate.ps1
-```
-
-Mac / Linux bash
-```
-source venv/bin/activate
-```
-
-Then install the requirements!
-```
-python -m pip install -r requirements.txt
-```
-
-## Running the program
-
-To run the interactive version:
-
-```bash
 python main.py
 ```
 
 To run the visual tests:
 
-```bash
+```
 python -m visuals.basic
 python -m visuals.complex
 python -m visuals.styles
+
 ```
 
 To run the unit tests:
 
-```bash
+```
 python run_tests.py
 ```
+
+### Schedule ###
+Since we are in different timezones, we will have to work mostly offline. We do not have much time left so we will have to work very hard but very smart too.
+
+1. Focus on code - less on theory.
+2. Get the basic window running soon. IA today.
+3. We re-assess tomorrow
+
+
+ ## 03.29.2023
+
+I will update helpful code and comments here. You copy the relevant code into your local template copy. Do your work their and give me results.
+
+We will work on grid.py and sandbox.py mostly today.
+
+
+
+1. We will implement the constructor
+  `
+  def __init__(self, draw_style, x, y) -> None:
+  `
+      we will check for draw_style
+          The style with which colours will be drawn.
+          Should be one of DRAW_STYLE_OPTIONS
+          This draw style determines the LayerStore used on each grid square.
+      - x, y: The dimensions of the grid.
+
+      Should also intialise the brush size to the DEFAULT provided as a class variable.
+      """
+
+
+
+
+      raise NotImplementedError()
+
+  def increase_brush_size(self):
+      """
+      Increases the size of the brush by 1,
+      if the brush size is already MAX_BRUSH,
+      then do nothing.
+      """
+      raise NotImplementedError()
+
+  def decrease_brush_size(self):
+      """
+      Decreases the size of the brush by 1,
+      if the brush size is already MIN_BRUSH,
+      then do nothing.
+      """
+      raise NotImplementedError()
+
+  def special(self):
+
+
+
+       """
+      Initialise the grid object.
+      - draw_style:
+          The style with which colours will be drawn.
+          Should be one of DRAW_STYLE_OPTIONS
+          This draw style determines the LayerStore used on each grid square.
+      - x, y: The dimensions of the grid.
+
+      Should also intialise the brush size to the DEFAULT provided as a class variable.
+      """
+
+
+
+
+      raise NotImplementedError()
+
+  def increase_brush_size(self):
+      """
+      Increases the size of the brush by 1,
+      if the brush size is already MAX_BRUSH,
+      then do nothing.
+      """
+      raise NotImplementedError()
+
+  def decrease_brush_size(self):
+      """
+      Decreases the size of the brush by 1,
+      if the brush size is already MIN_BRUSH,
+      then do nothing.
+      """
+      raise NotImplementedError()
+
+  def special(self):
+
+
+#### Questions to D
+1. What data structure should be the grid?
+2
+
+
+
+1. Get sandbox running
+  1. Copy sandbox.py into your own template directory
+  2. From cmd python    
