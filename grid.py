@@ -29,10 +29,12 @@ class Grid:
 
 
         self.rows = ArraySortedList (x)
+        self.cols = ArraySortedList (y)
 
+        self.cols[0] = "chachu 0"
+        self.cols[1] = "chachu 1"
 
-        self.rows[0] = "chachu 0"
-        self.rows[1] = "chachu 1"
+        self.rows[0] = self.cols
 
 
 

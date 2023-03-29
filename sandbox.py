@@ -9,6 +9,7 @@ def main():
     """ Main function """
 
     mygrid = Grid ("some", 3, 3)
+    # look at the following
     print (mygrid [0])
 
 
