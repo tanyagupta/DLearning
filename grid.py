@@ -27,25 +27,25 @@ class Grid:
         Should also intialise the brush size to the DEFAULT provided as a class variable.
         """
 
+        self.rows = x
+        self.cols = y
+        self.grid = []
 
-        self.rows = ArraySortedList (x)
-        self.cols = ArraySortedList (y)
-
-        self.cols[0] = "chachu 0"
-        self.cols[1] = "chachu 1"
-
-        self.rows[0] = self.cols
-
-
+        """"
+        -making the grid using nested lists inside the main list
+        -Here, self.rows is the number of nested lists i.e the rows
+         and self.cols is the number of items inside the nested lists i.e the columns
+        """
+        for i in range(self.rows):
+            self.grid.append([None]*self.cols)
 
 
-    # chachu code
     def __getitem__ (self, key):
-        return self.rows[key]
+            return self.grid[key]
 
-
-
-        #raise NotImplementedError()
+    def __setitem__(self, item, row, col):
+        self.grid[row][col] = item
+         #raise NotImplementedError()
 
     def increase_brush_size(self):
         """

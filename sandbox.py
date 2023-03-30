@@ -7,10 +7,17 @@ from data_structures.array_sorted_list import ArraySortedList
 
 
 
-class Test:
+class ChachuGrid:
     def __init__(self, cols, rows):
         self.cols = cols
         self.rows = rows
+        self.data = [[] for i in range(5)]
+
+
+
+
+
+
         self.data = [['X'] * cols for row in range(rows)]
 
     def __iter__(self):
@@ -18,25 +25,34 @@ class Test:
 
     def __getitem__(self, row):
         return self.data[row]
+
+    def __setitem__(self, row):
+        return self.data[row]
+
+
         # what should this be?
 
 
 def main():
     """ Main function """
 
-    t=Test (2,3)
-
-    
-
-    for x in t:
-        print(x)
+    t=ChachuGrid (2,3)
 
 
+
+    # for x in t:
+    #     print(x)
+
+    #print (t[0][1])
 
 
     mygrid = Grid ("some", 3, 3)
-    # look at the following
-    print (mygrid [0])
+    mygrid[0][0] = "layout store 1"
+    mygrid[0][1] = "layout store 2"
+    mygrid[0][2] = "layout store 3"
+
+
+    print (mygrid[0][2])
 
 
 
